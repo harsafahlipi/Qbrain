@@ -105,6 +105,7 @@ qbrian/
 ├── qslot_attention/              # renamed slot attention
 ├── window_based_qattention/      # window-based quantum self-attention
 ├── qconv/                        # Quantum convolution (amplitude encoding)
+├── qresnet/                      # Quantum ResNet architecture & blocks
 ├── qsann/                        # Stacked quantum self-attention network
 ├── qcombined_encoding/           # PennyLane rotation + amplitude
 └── qhierarchical_embedding/      # QHEB feature map (+ optional VQC factory)
