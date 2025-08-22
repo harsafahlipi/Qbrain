@@ -102,12 +102,12 @@ qbrian/
 ├── qtransformer_decoder/         # Decoder helpers (QNN + hybrid head)
 ├── qtransformer_encoder/         # Encoder helpers (attention + FFN)
 ├── qvit/                         # ViT-style patch embedding
-├── qslot_attention/              # renamed slot attention
+├── qslot_attention/              # Quantum slot attention
 ├── window_based_qattention/      # window-based quantum self-attention
 ├── qconv/                        # Quantum convolution (amplitude encoding)
 ├── qresnet/                      # Quantum ResNet architecture & blocks
 ├── qsann/                        # Stacked quantum self-attention network
-├── qcombined_encoding/           # PennyLane rotation + amplitude
+├── qcombined_encoding/           # Rotation + amplitude
 └── qhierarchical_embedding/      # QHEB feature map (+ optional VQC factory)
 ```
 
@@ -154,12 +154,6 @@ If you use Qbrian in academic work:
   url     = {https://github.com/Q-brain/Qbrian}
 }
 ```
-
----
-
-## License
-
-Add your chosen license (e.g., MIT) as `LICENSE` at the repo root.
 
 ---
 
