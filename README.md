@@ -158,4 +158,4 @@ If you use Qbrian in academic work:
 
 ## Acknowledgments
 
-Grateful to the **Qiskit** and **PennyLane** communities for the foundations that make hybrid quantum research accessible.
+Grateful to the **Qiskit** community for the foundations that make hybrid quantum research accessible.
