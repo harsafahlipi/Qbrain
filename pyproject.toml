@@ -1,0 +1,21 @@
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_package"
+version = "0.1.0"
+description = "General-purpose package with a QCBAM (quantum-inspired) module."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "qiskit",
+    "qiskit-aer",
+]
+
+[tool.setuptools.packages.find]
+where = ["./"]
+include = ["my_package*"]
