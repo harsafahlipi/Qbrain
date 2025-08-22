@@ -4,7 +4,7 @@
 > **Qbrian** (read “Q-brain”) is a modular, batteries-included library of **quantum and hybrid quantum–classical neural network blocks** for vision and sequence learning. It focuses on **clean APIs**, **robust fallbacks**, and **reproducible results**.
 
 This repository groups multiple building blocks—attention, CNN/Vision, transformers, normalization,
-positional encodings, patch ops, and more—implemented with **Qiskit**, **PennyLane**, and **PyTorch**.
+positional encodings, patch ops, and more—implemented with **Qiskit** and **PyTorch**.
 All modules follow **DRY/KISS/SOLID**, include **type hints**, **docstrings**, region markers, and avoid
 runtime print noise (favoring return values and logging).
 
@@ -16,10 +16,10 @@ runtime print noise (favoring return values and logging).
 
 - **Attention family**: CBAM, cross/self/masked, window-based Q self-attention, *qslot_attention*, *cordinate_attention*, QRAM‑enhanced self‑attention, QSANN stack.
 - **Vision family**: Quantum MobileNet, Quantum Convolution (amplitude encoding), Quantum Squeeze‑and‑Excitation (QSE), QGhost, ViT‑style patch embedding (QViT), quantum patch merging/splitting.
-- **Positional/Embedding**: QPE (quantum positional encoding), **qcombined_encoding** (PennyLane rotation + amplitude), **Qhierarchical_embedding** (QHEB).
+- **Positional/Embedding**: QPE (quantum positional encoding), **Qhierarchical_embedding** (QHEB).
 - **Transformer blocks**: Quantum Transformer **Encoder** and **Decoder** helpers.
 - **Normalization**: QuantumLayerNormalization (analytical + variational variants).
-- **Engineering**: graceful fallbacks when `qiskit-machine-learning`/**PennyLane** are missing; explicit shape checks; minimal side effects.
+- **Engineering**: graceful fallbacks when `qiskit-machine-learning` are missing; explicit shape checks; minimal side effects.
 
 
 
@@ -49,7 +49,6 @@ pip install -r requirements.txt
 ### Backend notes
 - `qiskit-aer` provides the simulators used in most modules (`AerSimulator`, `statevector_simulator`, etc.).
 - `qiskit-machine-learning` enables `EstimatorQNN` + `TorchConnector`. Where it’s unavailable, modules providing fallbacks will still run (with shaped random outputs) so your pipelines don’t break.
-- `pennylane` is used by **qcombined_encoding**; if it’s missing, a small MLP fallback is used.
 - GPU support is optional; most examples run on CPU-only.
 
 ---
