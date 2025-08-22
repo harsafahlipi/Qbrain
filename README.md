@@ -86,10 +86,10 @@ Quantum models aren’t a silver bullet—but they offer unique capabilities tha
 
 ```
 qbrian/
-├── cbam/                         # Quantum CBAM
-├── cordinate_attention/          # “coordinate” attention (intentional name)
-├── cross_attention/
-├── masked_self_attention/
+├── qcbam/                         # Quantum CBAM
+├── qcordinate_attention/          # “coordinate” attention (intentional name)
+├── qcross_attention/
+├── qmasked_self_attention/
 ├── qffn/                         # FastQuantumLayer + OptimizedQuantumFFN
 ├── qpe/                          # Quantum Positional Encoding
 ├── qram_selfattention/           # WorkingQRAM, QRAM_Layer, QRAM_Attention, QRAM_QSANN_Working
